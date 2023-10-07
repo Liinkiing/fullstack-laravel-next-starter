@@ -15,7 +15,6 @@ const HomePage: FC = () => {
         <p>
           Hi {viewer.name} ({viewer.email})
         </p>
-        <Link href="/settings">Settings</Link>
         <button type="button" onClick={() => logout()}>
           Logout
         </button>
