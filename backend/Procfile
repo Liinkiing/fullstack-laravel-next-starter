@@ -1,0 +1,2 @@
+release: php artisan migrate --no-interaction --force && php artisan lighthouse:cache && php artisan event:cache && php artisan route:cache && php artisan config:cache
+web: vendor/bin/heroku-php-nginx -C .heroku/nginx.conf public/

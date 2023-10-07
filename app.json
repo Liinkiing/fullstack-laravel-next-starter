@@ -1,0 +1,27 @@
+{
+  "name": "Fullstack starter",
+  "buildpacks": [
+    {
+      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "environments": {
+    "review": {
+      "env": {
+        "APP_KEY": {
+          "generator": "secret"
+        }
+      },
+      "scripts": {
+        "postdeploy": "php artisan migrate:fresh --seed"
+      },
+      "addons": []
+    }
+  }
+}

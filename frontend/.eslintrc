@@ -1,0 +1,44 @@
+{
+  "root": false,
+  "extends": ["plugin:storybook/recommended", "@liinkiing/eslint-config/next"],
+  "rules": {
+    "import/order": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "reservedFirst": true
+      }
+    ]
+  },
+  "plugins": ["simple-import-sort", "import"],
+  "overrides": [
+    {
+      "files": ["*.graphql"],
+      "extends": "plugin:@graphql-eslint/operations-recommended",
+      "parserOptions": {
+        "operations": [
+          "./app/**/*.graphql",
+          "./app/**/*.ts",
+          "./app/**/*.tsx",
+          "./src/**/*.graphql",
+          "./src/**/*.ts",
+          "./src/**/*.tsx"
+        ],
+        "schema": ["./client.schema.graphql", "./schema.graphql"]
+      }
+    }
+  ]
+}
