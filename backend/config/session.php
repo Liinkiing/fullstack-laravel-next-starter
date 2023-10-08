@@ -4,7 +4,7 @@ use Illuminate\Support\Str;
 
 return [
 
-    'logged_in_cookie_key' => 'odr_logged_in',
+    'logged_in_cookie_key' => 'fullstackapp_logged_in',
 
     /*
     |--------------------------------------------------------------------------

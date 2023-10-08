@@ -12,6 +12,6 @@ class EncryptCookies extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        'odr_logged_in',
+        'fullstackapp_logged_in',
     ];
 }

@@ -10,7 +10,7 @@ export type AuthProvider = 'google'
 
 class AuthServiceApp {
   get isLoggedIn(): boolean {
-    return Cookies.get('odr_logged_in') === 'true'
+    return Cookies.get('fullstackapp_logged_in') === 'true'
   }
 
   public async login({

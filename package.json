@@ -5,9 +5,9 @@
   "author": "Omar Jbara <omar.jbara2@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.6.5",
-    "commitlint": "^17.6.5",
-    "husky": "^8.0.0"
+    "@commitlint/config-conventional": "^17.7.0",
+    "commitlint": "^17.7.2",
+    "husky": "^8.0.3"
   },
   "scripts": {
     "prepare": "husky install"
